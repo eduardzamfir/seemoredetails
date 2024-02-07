@@ -1,4 +1,4 @@
-# [See More Details: Efficient Image Super-Resolution by Experts Mining]()
+# [See More Details: Efficient Image Super-Resolution by Experts Mining](https://arxiv.org/abs/2402.03412)
 
 [Eduard Zamfir](https://eduardzamfir.github.io), [Zongwei Wu](https://sites.google.com/view/zwwu/accueil), [Nancy Mehta](https://scholar.google.com/citations?user=WwdYdlUAAAAJ&hl=en&oi=ao),  [Yulun Zhang](http://yulunzhang.com/) and [Radu Timofte](https://www.informatik.uni-wuerzburg.de/computervision/), Arxiv Preprint, 2024
 
@@ -13,11 +13,10 @@
 If you find the code helpful in your resarch or work, please cite the following paper.
 
 ```
-@inproceedings{zamfir2024seemore,
-  title={See More Details: Efficient Image Super-Resolution by Experts Mining},
-  author={Zamfir, Eduard and Wu, Zongwei and Metha, Nancy and Zhang, Yulun and Timofte, Radu},
-  booktitle={arxiv},
-  year={2024}
+@misc{zamfir2024details,
+      title={See More Details: Efficient Image Super-Resolution by Experts Mining}, 
+      author={Eduard Zamfir and Zongwei Wu and Nancy Mehta and Yulun Zhang and Radu Timofte},
+      year={2024},
 }
 ```
 
