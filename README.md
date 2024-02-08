@@ -4,13 +4,28 @@
 
 ---
 > **Abstract:** Reconstructing high-resolution (HR) images from low-resolution (LR) inputs poses a significant challenge in image super-resolution (SR). While recent approaches have demonstrated the efficacy of intricate operations customized for various objectives, the straightforward stacking of these disparate operations can result in a substantial computational burden, hampering their practical utility. In response, we introduce **S**eemo**R**e, an efficient SR model employing expert mining. Our approach strategically incorporates experts at different levels, adopting a collaborative methodology. At the macro scale, our experts address rank-wise and spatial-wise informative features, providing a holistic understanding. Subsequently, the model delves into the subtleties of rank choice by leveraging a mixture of low-rank experts. By tapping into experts specialized in distinct key factors crucial for accurate SR, our model excels in uncovering intricate intra-feature details. This collaborative approach is reminiscent of the concept of **see more**, allowing our model to achieve an optimal performance with minimal computational costs in efficient settings.
+
+
+![](figures/arch.svg)
+
+<p align="center">
+<img src="figures/more.svg" width="600"/>
+</p>
+
+
 ---
 
+|                     HR                     |                       Bicubic                   | [SwinIR-Light](https://github.com/JingyunLiang/SwinIR) | [DAT-Light](https://github.com/zhengchen1999/DAT) |     SeemoRe (ours)              |
+| :----------------------------------------: | :---------------------------------------------: | :----------------------------------------------: | :-----------------------------------------: | :-----------------------------------------: |
+| <img src="figures/img_1_HR_x4.png" height=80> | <img src="figures/img_1_Bicubic_x4.png" height=80> |  <img src="figures/img_1_SwinIR_x4.png" height=80>  | <img src="figures/img_1_DAT_x4.png" height=80> | <img src="figures/img_1_SeemoRe_x4.png" height=80> |
+| <img src="figures/img_2_HR_x4.png" height=80> | <img src="figures/img_2_Bicubic_x4.png" height=80> |  <img src="figures/img_2_SwinIR_x4.png" height=80>  | <img src="figures/img_2_DAT_x4.png" height=80> | <img src="figures/img_2_SeemoRe_x4.png" height=80> |
+| <img src="figures/img_3_HR_x4.png" height=80> | <img src="figures/img_3_Bicubic_x4.png" height=80> |  <img src="figures/img_3_SwinIR_x4.png" height=80>  | <img src="figures/img_3_DAT_x4.png" height=80> | <img src="figures/img_3_SeemoRe_x4.png" height=80> |
+| <img src="figures/img_4_HR_x4.png" height=80> | <img src="figures/img_4_Bicubic_x4.png" height=80> |  <img src="figures/img_4_SwinIR_x4.png" height=80>  | <img src="figures/img_4_DAT_x4.png" height=80> | <img src="figures/img_4_SeemoRe_x4.png" height=80> |
+
+---
 
 ## Updates
-- Code coming soon
-
-  
+- Code coming soon  
 ## Citation
 
 If you find our work helpful, please consider citing the following paper and/or ⭐ the repo.
