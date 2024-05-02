@@ -44,6 +44,33 @@ Reconstructing high-resolution (HR) images from low-resolution (LR) inputs poses
 | <img src="figures/img_4_HR_x4.png" height=80> | <img src="figures/img_4_Bicubic_x4.png" height=80> |  <img src="figures/img_4_SwinIR_x4.png" height=80>  | <img src="figures/img_4_DAT_x4.png" height=80> | <img src="figures/img_4_SeemoRe_x4.png" height=80> |
 
 
+## Install
+Create a conda enviroment:
+````
+ENV_NAME="seemore"
+conda create -n $ENV_NAME python=3.10
+conda activate $ENV_NAME
+````
+Run following script to install the dependencies:
+````
+bash install.sh
+````
+
+## Usage
+In `options` you can find the corresponding config files for reproducing our experiments.
+
+##### **Testing**
+For testing the pre-trained checkpoints please use following commands. Replace `[TEST OPT YML]` with the path to the corresponding option file.
+`````
+python basicsr/test.py -opt [TEST OPT YML]
+`````
+
+##### **Training**
+For single-GPU training use the following commands. Replace `[TRAIN OPT YML]` with the path to the corresponding option file.
+`````
+torchrun --nproc_per_node=1 --master_port=4321 basicsr/train.py -opt [TRAIN OPT YML] --launcher pytorch
+`````
+
 ## Citation
 
 If you find our work helpful, please consider citing the following paper and/or ⭐ the repo.
