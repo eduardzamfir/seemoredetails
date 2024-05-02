@@ -1,4 +1,4 @@
-# SeemoRe
+# SeemoRe - ICML 2024
 
 
 
@@ -12,6 +12,7 @@
 [![paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2402.03412)
 
 ## Latest
+- `05/02/2024`: SeemoRe has been accepted at ICML 2024! 🎉
 - `02/05/2024`: Technical report released on [arxiv](https://arxiv.org/abs/2402.03412).
 
 
