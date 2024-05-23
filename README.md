@@ -12,7 +12,8 @@
 [![paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2402.03412)
 
 ## Latest
-- `05/02/2024`: SeemoRe has been accepted at ICML 2024! 🎉
+- `05/23/2024`: Code release.
+- `05/02/2024`: SeemoRe has been accepted at ICML 2024! 🎉 
 - `02/05/2024`: Technical report released on [arxiv](https://arxiv.org/abs/2402.03412).
 
 
@@ -34,16 +35,30 @@ Reconstructing high-resolution (HR) images from low-resolution (LR) inputs poses
 </p>
 
 
-## Visual Comparisons:
+## Results:
 
+<details>
+  <summary>
+  <font size="+1">Main Results</font>
+  </summary>
+<p align="center">
+<img src = "figures/main_table.png">
+</p>
+</details>
+
+<details>
+  <summary>
+  <font size="+1">Visual Comparison</font>
+  </summary>
 
 |                     HR                     |                       Bicubic                   | [SwinIR-Light](https://github.com/JingyunLiang/SwinIR) | [DAT-Light](https://github.com/zhengchen1999/DAT) |     SeemoRe (ours)              |
 | :----------------------------------------: | :---------------------------------------------: | :----------------------------------------------: | :-----------------------------------------: | :-----------------------------------------: |
-| <img src="figures/img_1_HR_x4.png" height=80> | <img src="figures/img_1_Bicubic_x4.png" height=80> |  <img src="figures/img_1_SwinIR_x4.png" height=80>  | <img src="figures/img_1_DAT_x4.png" height=80> | <img src="figures/img_1_SeemoRe_x4.png" height=80> |
-| <img src="figures/img_2_HR_x4.png" height=80> | <img src="figures/img_2_Bicubic_x4.png" height=80> |  <img src="figures/img_2_SwinIR_x4.png" height=80>  | <img src="figures/img_2_DAT_x4.png" height=80> | <img src="figures/img_2_SeemoRe_x4.png" height=80> |
-| <img src="figures/img_3_HR_x4.png" height=80> | <img src="figures/img_3_Bicubic_x4.png" height=80> |  <img src="figures/img_3_SwinIR_x4.png" height=80>  | <img src="figures/img_3_DAT_x4.png" height=80> | <img src="figures/img_3_SeemoRe_x4.png" height=80> |
-| <img src="figures/img_4_HR_x4.png" height=80> | <img src="figures/img_4_Bicubic_x4.png" height=80> |  <img src="figures/img_4_SwinIR_x4.png" height=80>  | <img src="figures/img_4_DAT_x4.png" height=80> | <img src="figures/img_4_SeemoRe_x4.png" height=80> |
+| <img src="figures/img_1_HR_x4.png" height=90> | <img src="figures/img_1_Bicubic_x4.png" height=90> |  <img src="figures/img_1_SwinIR_x4.png" height=90>  | <img src="figures/img_1_DAT_x4.png" height=90> | <img src="figures/img_1_SeemoRe_x4.png" height=90> |
+| <img src="figures/img_2_HR_x4.png" height=90> | <img src="figures/img_2_Bicubic_x4.png" height=90> |  <img src="figures/img_2_SwinIR_x4.png" height=90>  | <img src="figures/img_2_DAT_x4.png" height=90> | <img src="figures/img_2_SeemoRe_x4.png" height=90> |
+| <img src="figures/img_3_HR_x4.png" height=90> | <img src="figures/img_3_Bicubic_x4.png" height=90> |  <img src="figures/img_3_SwinIR_x4.png" height=90>  | <img src="figures/img_3_DAT_x4.png" height=90> | <img src="figures/img_3_SeemoRe_x4.png" height=90> |
+| <img src="figures/img_4_HR_x4.png" height=90> | <img src="figures/img_4_Bicubic_x4.png" height=90> |  <img src="figures/img_4_SwinIR_x4.png" height=90>  | <img src="figures/img_4_DAT_x4.png" height=90> | <img src="figures/img_4_SeemoRe_x4.png" height=90> |
 
+</details>
 
 ## Install
 Create a conda enviroment:
@@ -57,7 +72,10 @@ Run following script to install the dependencies:
 bash install.sh
 ````
 
+
 ## Usage
+Pre-trained checkpoints and visual results can be downloaded [here](https://drive.google.com/drive/folders/15jtvcS4jL_6QqEwaRodEN8FBrqVPrO2u?usp=share_link). Place the checkpoints in `checkpoints/`.
+
 In `options` you can find the corresponding config files for reproducing our experiments.
 
 ##### **Testing**

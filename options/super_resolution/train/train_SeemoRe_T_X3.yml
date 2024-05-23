@@ -1,0 +1,111 @@
+name: train_SeemoRe_T_X3
+model_type: SRModel
+scale: 3
+num_gpu: auto
+manual_seed: 10
+
+# dataset and data loader settings
+datasets:
+  train:
+    task: SR
+    name: DF2K
+    type: PairedImageDataset
+    dataroot_gt: datasets/superresV2/DF2K/HR
+    dataroot_lq: datasets/superresV2/DF2K/LR_bicubic/X3
+    filename_tmpl: '{}x3'
+    io_backend:
+      type: disk
+
+    gt_size: 192
+    use_hflip: True
+    use_rot: True
+
+    # data loader
+    use_shuffle: True
+    num_worker_per_gpu: 18
+    batch_size_per_gpu: 32
+    dataset_enlarge_ratio: 50
+    prefetch_mode: cuda
+    pin_memory: True
+
+  val:
+    task: SR
+    name: Set5
+    type: PairedImageDataset
+    dataroot_gt: datasets/superresV2/benchmark/Set5/HR
+    dataroot_lq: datasets/superresV2/benchmark/Set5/LR_bicubic/X3
+    filename_tmpl: '{}x3'
+    io_backend:
+      type: disk
+
+# network structures
+network_g:
+  type: SeemoRe
+  scale: 3
+  in_chans: 3
+  num_experts: 3
+  img_range: 1.
+  num_layers: 6
+  embedding_dim: 36
+  use_shuffle: True
+  lr_space: exp
+  topk: 1
+  recursive: 2
+  global_kernel_size: 11
+
+# path
+path:
+  pretrain_network_g: checkpoints/SeemoRe_T_X2/net_g_500000.pth
+  strict_load_g: False
+  resume_state: ~
+
+# training settings
+train:
+  optim_g:
+    type: Adam
+    lr: !!float 1e-3
+    weight_decay: 0
+    betas: [0.9, 0.99]
+
+  scheduler:
+    type: MultiStepLR
+    milestones: [250000, 400000, 450000, 475000]
+    gamma: 0.5
+
+  total_iter: 500000
+  warmup_iter: -1  # no warm up
+
+  # losses
+  pixel_opt:
+    type: L1Loss
+    loss_weight: 1.0
+    reduction: mean
+  fft_opt:
+    type: FFTLoss
+    loss_weight: 0.1
+    reduction: mean
+
+# validation settings
+val:
+  val_freq: !!float 5e3
+  save_img: False
+
+  metrics:
+    psnr: # metric name, can be arbitrary
+      type: calculate_psnr
+      crop_border: 3
+      test_y_channel: True
+
+# logging settings
+logger:
+  print_freq: 200
+  save_checkpoint_freq: !!float 5e3
+  use_tb_logger: True
+  wandb:
+    project: ~
+    resume_id: ~
+
+# dist training settings
+dist_params:
+  backend: nccl
+  port: 29500
