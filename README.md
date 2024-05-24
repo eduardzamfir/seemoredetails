@@ -10,6 +10,8 @@
 #### **<sup>*</sup> Corresponding authors**
 
 [![paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2402.03412)
+[![project](https://img.shields.io/badge/project-page-brightgreen)](https://eduardzamfir.github.io/seemore/)
+
 
 ## Latest
 - `05/23/2024`: Code & ckpt release.
