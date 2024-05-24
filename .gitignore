@@ -21,13 +21,6 @@ scripts/__init__.py
 version.py
 
 # ignored files with suffix
-*.html
-*.png
-*.jpeg
-*.jpg
-*.gif
-*.pth
-*.zip
 
 # template
 
@@ -69,7 +62,6 @@ pip-log.txt
 pip-delete-this-directory.txt
 
 # Unit test / coverage reports
-htmlcov/
 .tox/
 .coverage
 .coverage.*
