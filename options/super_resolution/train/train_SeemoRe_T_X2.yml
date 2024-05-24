@@ -10,8 +10,8 @@ datasets:
     task: SR
     name: DF2K
     type: PairedImageDataset
-    dataroot_gt: datasets/superresV2/DF2K/HR
-    dataroot_lq: datasets/superresV2/DF2K/LR_bicubic/X2
+    dataroot_gt: datasets/DF2K/HR
+    dataroot_lq: datasets/DF2K/LR_bicubic/X2
     filename_tmpl: '{}x2'
     io_backend:
       type: disk
@@ -32,8 +32,8 @@ datasets:
     task: SR
     name: Set5
     type: PairedImageDataset
-    dataroot_gt: datasets/superresV2/benchmark/Set5/HR
-    dataroot_lq: datasets/superresV2/benchmark/Set5/LR_bicubic/X2
+    dataroot_gt: datasets/benchmark/Set5/HR
+    dataroot_lq: datasets/benchmark/Set5/LR_bicubic/X2
     filename_tmpl: '{}x2'
     io_backend:
       type: disk
