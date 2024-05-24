@@ -6,7 +6,7 @@
 
 #### [Eduard Zamfir<sup>1</sup>](https://eduardzamfir.github.io), [Zongwei Wu<sup>1*</sup>](https://sites.google.com/view/zwwu/accueil), [Nancy Mehta<sup>1</sup>](https://scholar.google.com/citations?user=WwdYdlUAAAAJ&hl=en&oi=ao),  [Yulun Zhang<sup>2,3*</sup>](http://yulunzhang.com/) and [Radu Timofte<sup>1,2</sup>](https://www.informatik.uni-wuerzburg.de/computervision/)
 
-#### **<sup>1</sup> University of Würzburg, Germany - <sup>2</sup> ETH Zürich, Switzerland - <sup>3</sup> Shanghai Jiao Tong University, China**
+#### **<sup>1</sup> University of Würzburg, Germany - <sup>2</sup> Shanghai Jiao Tong University, China - <sup>3</sup> ETH Zürich, Switzerland**
 #### **<sup>*</sup> Corresponding authors**
 
 [![paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2402.03412)
