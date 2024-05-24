@@ -4,7 +4,7 @@
 
 ### See More Details: Efficient Image Super-Resolution by Experts Mining
 
-#### [Eduard Zamfir<sup>1</sup>](https://eduardzamfir.github.io), [Zongwei Wu<sup>1*</sup>](https://sites.google.com/view/zwwu/accueil), [Nancy Mehta<sup>1</sup>](https://scholar.google.com/citations?user=WwdYdlUAAAAJ&hl=en&oi=ao),  [Yulun Zhang<sup>2,3*</sup>](http://yulunzhang.com/) and [Radu Timofte<sup>1,2</sup>](https://www.informatik.uni-wuerzburg.de/computervision/)
+#### [Eduard Zamfir<sup>1</sup>](https://eduardzamfir.github.io), [Zongwei Wu<sup>1*</sup>](https://sites.google.com/view/zwwu/accueil), [Nancy Mehta<sup>1</sup>](https://scholar.google.com/citations?user=WwdYdlUAAAAJ&hl=en&oi=ao),  [Yulun Zhang<sup>2,3*</sup>](http://yulunzhang.com/) and [Radu Timofte<sup>1</sup>](https://www.informatik.uni-wuerzburg.de/computervision/)
 
 #### **<sup>1</sup> University of Würzburg, Germany - <sup>2</sup> Shanghai Jiao Tong University, China - <sup>3</sup> ETH Zürich, Switzerland**
 #### **<sup>*</sup> Corresponding authors**
