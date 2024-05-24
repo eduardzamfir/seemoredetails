@@ -95,10 +95,12 @@ torchrun --nproc_per_node=1 --master_port=4321 basicsr/train.py -opt [TRAIN OPT 
 If you find our work helpful, please consider citing the following paper and/or ⭐ the repo.
 
 ```
-@misc{zamfir2024details,
-      title={See More Details: Efficient Image Super-Resolution by Experts Mining}, 
-      author={Eduard Zamfir and Zongwei Wu and Nancy Mehta and Yulun Zhang and Radu Timofte},
-      year={2024},
+@inproceedings{zamfir2024details,
+  title={See More Details: Efficient Image Super-Resolution by Experts Mining}, 
+  author={Eduard Zamfir and Zongwei Wu and Nancy Mehta and Yulun Zhang and Radu Timofte},
+  booktitle={International Conference on Machine Learning},
+  year={2024},
+  organization={PMLR}
 }
 ```
 
