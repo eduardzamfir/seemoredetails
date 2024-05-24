@@ -125,7 +125,7 @@
 </section>
 
 <script defer src="https://unpkg.com/img-comparison-slider@7/dist/index.js"></script>
-<link  rel="stylesheet"  href="https://unpkg.com/img-comparison-slider@7/dist/styles.css"/>
+<link rel="stylesheet" href="https://unpkg.com/img-comparison-slider@7/dist/styles.css"/>
 
 <style>
   .slider-example-split-line {
@@ -133,9 +133,7 @@
     --divider-color: #ffa658;
     --default-handle-opacity: 0;
   }
-</style>
 
-<style>
   .before,
   .after { margin: 0; }
 
@@ -155,48 +153,54 @@
 
   .before figcaption {left: 12px;}
   .after figcaption { right: 12px;}
+
+  .image-sliders-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adjust the gap between sliders as needed */
+  }
+
+  .image-slider {
+    flex: 1;
+    min-width: 200px; /* Minimum width for each slider */
+  }
 </style>
- 
-<div class="columns is-centered">
 
-<img-comparison-slider tabindex="0" class="slider-example-split-line rendered"  hover="hover" >
-  <figure slot="first" class="before">
-    <img src="figures/assets/img004x4.png" width=50%>
-    <figcaption><strong>Before</strong></figcaption>
-  </figure>
-  <figure slot="second" class="after">
-    <img  src="figures/assets/img004x4_SeemoRe_L.png"  width=50%>
-    <figcaption><strong>Ours</strong></figcaption>
-  </figure>
+<div class="image-sliders-container">
+  <img-comparison-slider tabindex="0" class="slider-example-split-line image-slider" hover="hover">
+    <figure slot="first" class="before">
+      <img src="figures/assets/img004x4.png" width="100%">
+      <figcaption><strong>Before</strong></figcaption>
+    </figure>
+    <figure slot="second" class="after">
+      <img src="figures/assets/img004x4_SeemoRe_L.png" width="100%">
+      <figcaption><strong>Ours</strong></figcaption>
+    </figure>
   </img-comparison-slider>
 
-</div>
- 
-<div class="columns is-centered"> 
-  <img-comparison-slider tabindex="0" class="slider-example-split-line rendered"  hover="hover" >
-  <figure slot="first" class="before">
-    <img src="figures/assets/img053x4.png" width=50%>
-    <figcaption><strong>Before</strong></figcaption>
-  </figure>
-  <figure slot="second" class="after">
-    <img  src="figures/assets/img053x4_SeemoRe_L.png"  width=50%>
-    <figcaption><strong>Ours</strong></figcaption>
-  </figure>
+  <img-comparison-slider tabindex="0" class="slider-example-split-line image-slider" hover="hover">
+    <figure slot="first" class="before">
+      <img src="figures/assets/img053x4.png" width="100%">
+      <figcaption><strong>Before</strong></figcaption>
+    </figure>
+    <figure slot="second" class="after">
+      <img src="figures/assets/img053x4_SeemoRe_L.png" width="100%">
+      <figcaption><strong>Ours</strong></figcaption>
+    </figure>
+  </img-comparison-slider>
+
+  <img-comparison-slider tabindex="0" class="slider-example-split-line image-slider" hover="hover">
+    <figure slot="first" class="before">
+      <img src="figures/assets/img073x4.png" width="100%">
+      <figcaption><strong>Before</strong></figcaption>
+    </figure>
+    <figure slot="second" class="after">
+      <img src="figures/assets/img073x4_SeemoRe_L.png" width="100%">
+      <figcaption><strong>Ours</strong></figcaption>
+    </figure>
   </img-comparison-slider>
 </div>
 
-<div class="columns is-centered"> 
-  <img-comparison-slider tabindex="0" class="slider-example-split-line rendered"  hover="hover" >
-  <figure slot="first" class="before">
-    <img src="figures/assets/img073x4.png" width=50%>
-    <figcaption><strong>Before</strong></figcaption>
-  </figure>
-  <figure slot="second" class="after">
-    <img  src="figures/assets/img073x4_SeemoRe_L.png"  width=50%>
-    <figcaption><strong>Ours</strong></figcaption>
-  </figure>
-  </img-comparison-slider>
-</div>
 
 <section class="section">
   <div class="container is-max-desktop">
