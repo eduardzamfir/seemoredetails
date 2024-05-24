@@ -72,8 +72,8 @@
 
           <div class="is-size-5 publication-authors">
             <span class="author-block"><sup>1</sup>University of Würzburg, Germany</span>
-            <span class="author-block"><sup>2</sup>ETH Zürich, Switzerland</span>
-            <span class="author-block"><sup>3</sup>Shanghai Jiao Tong University, China</span>
+            <span class="author-block"><sup>2</sup>Shanghai Jiao Tong University, China</span>
+            <span class="author-block"><sup>3</sup>ETH Zürich, Switzerland</span>
             <br>
             <small>ICML 2024, Vienna </small>
             <br>
@@ -123,7 +123,6 @@
     </div>
   </div>
 </section>
-
 <script defer src="https://unpkg.com/img-comparison-slider@7/dist/index.js"></script>
 <link rel="stylesheet" href="https://unpkg.com/img-comparison-slider@7/dist/styles.css"/>
 
@@ -164,42 +163,49 @@
     flex: 1;
     min-width: 200px; /* Minimum width for each slider */
   }
+
+  .image-slider img {
+    height: 300px; /* Set a fixed height for the images */
+    width: 100%;
+    object-fit: cover; /* Crop the images to fit the fixed height */
+  }
 </style>
 
 <div class="image-sliders-container">
   <img-comparison-slider tabindex="0" class="slider-example-split-line image-slider" hover="hover">
-    <figure slot="first" class="before">
-      <img src="figures/assets/img004x4.png" width="100%">
-      <figcaption><strong>Before</strong></figcaption>
-    </figure>
-    <figure slot="second" class="after">
-      <img src="figures/assets/img004x4_SeemoRe_L.png" width="100%">
+    <figure slot="first" class="after">
+      <img src="figures/assets/img004x4_SeemoRe_L.png" alt="Ours">
       <figcaption><strong>Ours</strong></figcaption>
+    </figure>
+    <figure slot="second" class="before">
+      <img src="figures/assets/img004x4.png" alt="Before">
+      <figcaption><strong>Before</strong></figcaption>
     </figure>
   </img-comparison-slider>
 
   <img-comparison-slider tabindex="0" class="slider-example-split-line image-slider" hover="hover">
-    <figure slot="first" class="before">
-      <img src="figures/assets/img053x4.png" width="100%">
-      <figcaption><strong>Before</strong></figcaption>
-    </figure>
-    <figure slot="second" class="after">
-      <img src="figures/assets/img053x4_SeemoRe_L.png" width="100%">
+    <figure slot="first" class="after">
+      <img src="figures/assets/img053x4_SeemoRe_L.png" alt="Ours">
       <figcaption><strong>Ours</strong></figcaption>
+    </figure>
+    <figure slot="second" class="before">
+      <img src="figures/assets/img053x4.png" alt="Before">
+      <figcaption><strong>Before</strong></figcaption>
     </figure>
   </img-comparison-slider>
 
   <img-comparison-slider tabindex="0" class="slider-example-split-line image-slider" hover="hover">
-    <figure slot="first" class="before">
-      <img src="figures/assets/img073x4.png" width="100%">
-      <figcaption><strong>Before</strong></figcaption>
-    </figure>
-    <figure slot="second" class="after">
-      <img src="figures/assets/img073x4_SeemoRe_L.png" width="100%">
+    <figure slot="first" class="after">
+      <img src="figures/assets/img073x4_SeemoRe_L.png" alt="Ours">
       <figcaption><strong>Ours</strong></figcaption>
+    </figure>
+    <figure slot="second" class="before">
+      <img src="figures/assets/img073x4.png" alt="Before">
+      <figcaption><strong>Before</strong></figcaption>
     </figure>
   </img-comparison-slider>
 </div>
+
 
 
 <section class="section">
@@ -215,7 +221,18 @@
         </div>
       </div>
     </div>
-    <!--/ Abstract. -->
+
+  <!-- Image. -->
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+      <figure>
+        <img src="arch.svg" style="width:100%; height:auto;">
+        <figcaption>Architecture Overview</figcaption>
+      </figure>
+    </div>
+  </div>
+  </div>
+
 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
