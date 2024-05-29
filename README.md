@@ -11,9 +11,10 @@
 
 [![paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2402.03412)
 [![project](https://img.shields.io/badge/project-page-brightgreen)](https://eduardzamfir.github.io/seemore/)
-
+[![demo](https://img.shields.io/badge/huggingface-demo-brightgreen)](https://huggingface.co/spaces/eduardzamfir/SeeMoreDetails)
 
 ## Latest
+- `05/29/2024`: Added 🤗[Demo](https://huggingface.co/spaces/eduardzamfir/SeeMoreDetails).
 - `05/23/2024`: Code & ckpt release.
 - `05/02/2024`: SeemoRe has been accepted at ICML 2024! 🎉 
 - `02/05/2024`: Technical report released on [arxiv](https://arxiv.org/abs/2402.03412).
