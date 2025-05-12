@@ -15,7 +15,7 @@
 
 ## Latest
 - `05/29/2024`: Added 🤗[Demo](https://huggingface.co/spaces/eduardzamfir/SeeMoreDetails).
-- `05/23/2024`: Code & ckpt release.
+- `05/23/2024`: Code & ckpt & results release. [Google Drive](https://drive.google.com/drive/folders/15jtvcS4jL_6QqEwaRodEN8FBrqVPrO2u?usp=share_link)
 - `05/02/2024`: SeemoRe has been accepted at ICML 2024! 🎉 
 - `02/05/2024`: Technical report released on [arxiv](https://arxiv.org/abs/2402.03412).
 
