@@ -73,7 +73,7 @@ network_g:
 
 # path
 path:
-  pretrain_network_g: checkpoints/SeemoRe_B_X4/net_g_500000.pth
+  pretrain_network_g: checkpoints/SeemoRe_B_X4/net_g_latest.pth
   strict_load_g: True
 
 # validation settings
